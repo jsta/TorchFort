@@ -8,10 +8,6 @@ on:
     paths:
       - "docker/Dockerfile"      
       
-  schedule:
-    - cron: '0 2 10 * *'  # run workflow at 2AM on tenth day of every month
-    - workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
