@@ -9,7 +9,7 @@ RUN apt update -y && \
     apt install -y libibverbs-dev ibverbs-utils numactl
 
 # Install NVHPC SDK
-RUN wget -q0- https://developer.download.nvidia.com/hpc-sdk/24.1/nvhpc_2024_241_Linux_x86_64_cuda_12.3.tar.gz | tar xpz && \
+RUN wget -qO- https://developer.download.nvidia.com/hpc-sdk/24.1/nvhpc_2024_241_Linux_x86_64_cuda_12.3.tar.gz | tar xpzf && \
     nvhpc_2024_241_Linux_x86_64_cuda_12.3/install --quiet && \
     rm -rf nvhpc_2024_241_Linux_x86_64_cuda_12.3
 
