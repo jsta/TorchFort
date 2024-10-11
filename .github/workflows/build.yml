@@ -33,6 +33,6 @@ jobs:
         with:
           context: .
           shm-size: 2g
-          file: docker/Dockerfile
+          file: docker/Dockerfile_gnu_cpuonly
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/torchfort:latest
